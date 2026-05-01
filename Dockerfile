@@ -10,3 +10,5 @@ COPY index.html /usr/share/nginx/html/index.html
     <p>This webpage is running inside a Docker container.</p>
 </body>
 </html>
+docker build -t hello-docker .
+docker run -d -p 8080:80 hello-docker
